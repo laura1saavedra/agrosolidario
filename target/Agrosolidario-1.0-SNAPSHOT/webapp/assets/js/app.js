@@ -1,3 +1,7 @@
+// Base del proyecto ("/Agrosolidario")
+const BASE = "/" + window.location.pathname.split("/")[1];
+
+
 // ---------------------- 1. VALIDACIÓN FORMULARIO REGISTRO -------------------
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -487,11 +491,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // -------------------- 4. BOTÓN SALIR (VOLVER A INICIO) ------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
-    const exitBtn = document.querySelector(".exit-btn");
-    if (!exitBtn) return;
+    const hasHref = exitBtn.getAttribute("href");
+    if (hasHref && hasHref !== "#") return;
 
     exitBtn.addEventListener("click", () => {
-        window.location.href = "../index.html";
+        window.location.href = "index.jsp";
     });
 });
 

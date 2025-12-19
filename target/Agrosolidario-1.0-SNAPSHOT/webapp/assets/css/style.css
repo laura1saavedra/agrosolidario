@@ -54,7 +54,7 @@ header nav a:last-child {
 .primer-mockup {
     width: 100%;
     height: 75vh;
-    background-image: url("imagenes/portada.png");
+    background-image: url("../imagenes/portada.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -275,7 +275,7 @@ header nav a:last-child {
 
 /* ------------------------ SECCIÓN CIERRE INICIO ------------------------ */
 .seccion-final {
-    background-image: url("imagenes/mensaje-contacto.png");
+    background-image: url("../imagenes/mensaje-contacto.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
